@@ -1,0 +1,112 @@
+:root {
+    --highlight-color: hsl(75, 94%, 57%);
+    --text-color: hsl(0, 0%, 100%);
+    --background-color: hsl(0, 0%, 8%);
+    --card-color: hsl(0, 0%, 12%);
+    --btn-color: hsl(0, 0%, 20%);
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: Inter, sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    padding: 2.7rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    height: 61rem;
+    width: 38.5rem;
+    border-radius: 1.3rem;
+    padding: 4rem;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-pic img {
+    border-radius: 50%;
+    max-width: 8.8rem;
+    max-height: 8.8rem;
+    margin-bottom: 2.5rem;
+}
+
+
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 3.17rem;
+}
+
+
+.user-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+}
+
+
+
+.user-city {
+    font-size: 1.4rem;
+    color: var(--highlight-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.user-bio {
+    font-size: 1.41rem;
+    font-weight: 300;
+    margin-bottom: 2.7rem;
+}
+
+
+.user-links-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    font-weight: 600;
+    gap: 1.5rem;
+}
+
+.link-btn {
+    background-color: var(--btn-color);
+    width: 30rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-radius: 0.6rem;
+}
+
+
+.link-btn:hover{
+    background-color: var(--highlight-color);
+    color: black;
+}
+
+
+
+
+@media (max-width: 400px){
+
+    .link-btn {
+        
+        width: 25rem;
+
+    
+    }
+
+}
